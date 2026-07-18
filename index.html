@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Justin L. — indie Android developer from Canada. Maker of Poke Showcase Dex and other utility apps for Pokémon GO players.">
+  <title>Justin L. — App Developer</title>
+  <style>
+    :root {
+      --bg: #0e1116;
+      --surface: #171c24;
+      --surface-2: #1e2530;
+      --text: #e6ebf2;
+      --text-muted: #9aa7b8;
+      --accent: #4fa3ff;
+      --accent-soft: rgba(79, 163, 255, 0.12);
+      --border: #2a3342;
+      --radius: 14px;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fb;
+        --surface: #ffffff;
+        --surface-2: #eef2f7;
+        --text: #1b2430;
+        --text-muted: #5b6a7e;
+        --accent: #1a6fd4;
+        --accent-soft: rgba(26, 111, 212, 0.10);
+        --border: #dbe3ec;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 4rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+    header .tagline {
+      color: var(--text-muted);
+      margin-top: 0.35rem;
+      font-size: 1.05rem;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.1rem;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    a.chip:hover { border-color: var(--accent); color: var(--accent); }
+    section { margin-top: 3rem; }
+    h2 {
+      font-size: 1.2rem;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.5rem;
+    }
+    .card + .card { margin-top: 1rem; }
+    .card h3 {
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 0.15rem 0.6rem;
+    }
+    .badge.soon {
+      background: var(--surface-2);
+      color: var(--text-muted);
+    }
+    .card p {
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .card ul {
+      margin: 0.6rem 0 0 1.2rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.5rem 1.05rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      transition: border-color 0.15s ease;
+    }
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn.primary:hover { opacity: 0.9; }
+    footer {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--text-muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Justin L.</h1>
+      <p class="tagline">Indie Android developer building utility apps for Pokémon GO players.</p>
+      <div class="meta">
+        <span class="chip">📍 Canada</span>
+        <a class="chip" href="https://github.com/just-lagger">GitHub — just-lagger</a>
+        <a class="chip" href="mailto:justin.lagtapon@gmail.com">✉️ Contact</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Apps</h2>
+
+      <div class="card">
+        <h3>Poke Showcase Dex <span class="badge">On Google Play</span></h3>
+        <p>Figure out your showcase score in Pokémon GO — manage your storage and know which Pokémon to keep or turn to candy, without needing an active showcase.</p>
+        <ul>
+          <li>Scan Pokémon with the overlay or enter details manually</li>
+          <li>Get a score estimate, or record your known score</li>
+          <li>See your highest-scored mon by type or species</li>
+          <li>Generate a search string to find the Pokémon in-game</li>
+          <li>Import from Poke Genie</li>
+        </ul>
+        <div class="links">
+          <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.showcasescout.app">Get it on Google Play</a>
+          <a class="btn" href="https://github.com/just-lagger/Poke-Showcase-Dex">GitHub</a>
+          <a class="btn" href="https://groups.google.com/g/psd-early-access">Join the early-access test</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Pogo-Idle <span class="badge soon">In development</span></h3>
+        <p>Find out which of your Pokémon GO friends have gone idle, so you can free up slots in the 450-friend cap. Everything runs on-device.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Justin L. · <a href="/app-ads.txt">app-ads.txt</a></p>
+    </footer>
+  </div>
+</body>
+</html>
